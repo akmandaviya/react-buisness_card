@@ -4,6 +4,8 @@ body {
   padding: 0%;
   margin: 0%;
   background-color: lightyellow;
+  width: 900px;
+  overflow-x:hidden;
 }
 
 .logo{
@@ -18,7 +20,6 @@ body {
 margin-top: 100px;
 margin-left: 100px;
 }
-
 
 
 .heading2 {
@@ -37,6 +38,7 @@ margin-left: 100px;
   font-weight: lighter;
   font-size: 30px;
 }
+
 .app-create-btn {
 margin-left: 200px;
 border: 0px lightsalmon;
@@ -47,7 +49,14 @@ cursor: pointer;
 background-color: lightsalmon;
 color: white;
 text-transform: uppercase;
+transition: 0.3s;
+position: relative;
+top: -50px;
+}
 
+.app-create-btn:hover{
+  background-color: white;
+  color: orange
 }
 
 .banner {
@@ -59,10 +68,54 @@ text-transform: uppercase;
 width: 500px;
 height: 500px;
 margin-left: 700px;
-
+position: relative;
+bottom: -200px;
+left: -400px;
 }
 
 .box {
  margin-left: 100px;
  margin-top: -550px;
+ position: relative;
+ top: -100px;
+}
+
+.sub-box {
+  position: relative;
+  left: 900px;
+  bottom: 200px;
+}
+
+.contact-btn{
+  border: 1px solid lightsalmon;
+  border-radius: 50px;
+  padding: 10px;
+  width: 180px;
+  cursor: pointer;
+  background-color: white;
+  color: orange;
+  text-transform: uppercase;
+  transition: 0.3s;
+  position: relative;
+  left: 900px;
+  bottom: 100px;
+}
+
+.contact-btn:hover {
+  background-color: orange;
+  color: white;
+}
+
+.heading5 {
+  font-weight: lighter;
+}
+.heading6{
+  text-transform: uppercase;
+  font-weight:bold;
+
+}
+.heading7 {
+  font-weight: lighter;
+  line-height: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

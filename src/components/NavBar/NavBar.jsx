@@ -1,9 +1,17 @@
 import React from 'react'
 import './NavBar.css'
-import { NavLink, Link} from 'react-router-dom'
+import { NavLink, Link,useNavigate} from 'react-router-dom'
 import Logo from '../../Assests/logo.png'
 
 const NavBar = () => {
+
+// let navigate = useNavigate()
+// const clickHandle = () => {
+//   // window.location.pathname="form"
+
+//   navigate('/')
+// }
+
   return (
     <> 
  
