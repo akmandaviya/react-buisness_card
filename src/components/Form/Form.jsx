@@ -1,9 +1,20 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import Data from './Data.jsx'
+import './Form.css'
+
 
 const Form = () => {
+
+  let navigate = useNavigate()
+  const tohandle = () => {
+  navigate('/data')
+  }
+  
+
   return (
-    <div className='form-container'>
-      <form>
+    <div className='container'>
+      <form className='form-container' action={Data}> 
         <label for="fname">First Name</label>
         <input type="text"/>
         <label for="mname">Middle Name</label>
@@ -22,8 +33,11 @@ const Form = () => {
         <input type="text"/>
       </form>
 
-      <button>Cancel</button>
-      <button>Submit</button>
+
+      <Link to='/'><button className='cnl-btn'>Cancel</button></Link>
+      <Link to='/data'> <button className='sbt-btn' type='submit' onClick={tohandle}>Submit</button></Link>
+      
+      
     </div>
   )
 }

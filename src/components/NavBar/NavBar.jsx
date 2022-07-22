@@ -5,12 +5,12 @@ import Logo from '../../Assests/logo.png'
 
 const NavBar = () => {
 
-// let navigate = useNavigate()
-// const clickHandle = () => {
-//   // window.location.pathname="form"
+let navigate = useNavigate()
+const clickHandle = () => {
+  // window.location.pathname="form"
 
-//   navigate('/')
-// }
+  navigate('/')
+}
 
   return (
     <> 
@@ -32,9 +32,9 @@ const NavBar = () => {
      Pricing
     </NavLink>
 
-    <NavLink className="nav-link"  to="/form">
-     <button className='create-btn'>Create a Card</button>
-    </NavLink>
+    <Link className="nav-link"  to="/form">
+     <button className='create-btn' onClick={clickHandle}>Create a Card</button>
+    </Link>
     </nav>
     </>
   )

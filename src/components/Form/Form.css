@@ -1,0 +1,65 @@
+.container {
+    display: grid;
+    place-items: center;
+    position: relative;
+    top : 30px;
+    left: 550px;
+    padding: 10px;
+    height: 650px;
+    width: 400px;
+    background-color: lightsalmon;
+    border-radius: 40px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-container label {
+    color: white;
+}
+.form-container input {
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 400px;
+    border-bottom: 2px solid grey;
+    border-radius: 5px;
+}
+.cnl-btn{
+   background-color: grey;
+   color: white;
+   padding: 15px;
+   border: 0px grey;
+   border-radius: 50px;
+   width: 200px;
+   border-radius: 20px;
+   border: 0.5px solid black;
+   cursor: pointer;
+   transition: 0.3s;
+
+}
+
+.cnl-btn:hover {
+  background-color: red;
+  width: 250px;
+
+}
+
+.sbt-btn {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    border: 0px grey;
+    width: 200px;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.sbt-btn:hover{
+    background-color: green;
+    width: 250px;
+
+}
